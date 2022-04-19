@@ -4,7 +4,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 import uuid
 from gerant.models import Gerant
 from commune.models import Commune
-from secteur import Secteur
+from secteur.models import Secteur
 # Create your models here.
 class Entreprise(models.Model):
 
