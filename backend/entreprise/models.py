@@ -18,7 +18,7 @@ class Entreprise(models.Model):
     type_entrp = models.CharField(max_length=100, null=False, blank=False)
     gerant = models.ForeignKey(Gerant, on_delete=models.SET_NULL, null=True)
     commune = models.ForeignKey(Commune, on_delete=models.SET_NULL, null=True)
-    secteurs = models.ForeignKey(Secteur, on_delete=models.SET_NULL, null=True)
+    secteurssss= models.ForeignKey(Secteur, on_delete=models.SET_NULL, null=True)
 
 
     class Meta:
