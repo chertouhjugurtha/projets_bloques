@@ -15,3 +15,4 @@ class Secteur(models.Model):
 
     class Meta:
         db_table = 'secteur'
+

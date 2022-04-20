@@ -12,7 +12,7 @@ class Gerant(models.Model):
     nom = models.CharField(unique=True, max_length=255, null=False, blank=False)
     prenom = models.CharField(unique=True, max_length=255, null=False, blank=False)
     age = models.IntegerField(unique=True, validators=[MinValueValidator(1)], null=False)
-    date_naissance = models.DateTimeField(null=True)
+    date_naissance = models.DateField(null=True)
     phone = models.CharField(max_length=100, null=False, blank=False)
     nationalite = models.CharField(max_length=100,null=False, blank=False)
     gerant = models.BooleanField(null=False)
