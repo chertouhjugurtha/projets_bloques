@@ -7,10 +7,6 @@ from commune.models import Commune
 from secteur import Secteur
 # Create your models here.
 class Entreprise(models.Model):
-
-    # Constantes des états de grant:
-
-
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     raison_social = models.CharField(unique=True, max_length=255, null=False, blank=False)
     nb_employe_prevus = models.IntegerField(unique=True, validators=[MinValueValidator(1)], null=False)    

@@ -15,7 +15,7 @@ class Gerant(models.Model):
     date_naissance = models.DateTimeField(null=True)
     phone = models.CharField(max_length=100, null=False, blank=False)
     nationalite = models.CharField(max_length=100,null=False, blank=False)
-    gerant = models.BooleanField(null=False)
+    gerant = models.BooleanField(null=False, verbose_name='Est un gérant')
         
 
     class Meta:
